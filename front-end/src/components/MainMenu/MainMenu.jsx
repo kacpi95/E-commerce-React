@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import styles from './MainMenu.module.css';
 
 export function MainMenu() {
   const genders = [
@@ -16,16 +17,14 @@ export function MainMenu() {
     },
   ];
   return (
-    <>
-      <ul>
-        {genders.map((category) => {
-          return (
-            <NavLink key={category.path} to={category.path}>
-              {category.categoryName}
-            </NavLink>
-          );
-        })}
-      </ul>
-    </>
+    <ul className={styles.mainMenu}>
+      {genders.map((category) => {
+        return (
+          <li key={category.path}>
+            <NavLink to={category.path}>{category.categoryName}</NavLink>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
