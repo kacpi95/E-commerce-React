@@ -1,7 +1,3 @@
-import { products } from './MainPage';
-
-export function Product() {
-  const { productName } = products;
-
-  return <p>{productName}</p>;
+export function Product({ product }) {
+  return <p>{product.productName}</p>;
 }
