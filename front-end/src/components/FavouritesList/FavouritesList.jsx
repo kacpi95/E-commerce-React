@@ -1,27 +1,16 @@
 import { CenteredContent } from '../CenteredContent/CenteredContent';
+import { FavouriteProduct } from '../FavouriteProduct/FavouriteProduct';
 
 export function FavouritesList({ products }) {
   return (
     <CenteredContent>
-      <h2>Ulubione</h2>
       <div>
-        <ul>
+        <h2>Ulubione</h2>
+        <div>
           {products.map((product) => {
-            return (
-              <li>
-                <img src='' alt='' />
-                <div>
-                  <h3>{product.productName}</h3>
-                  <p>Cena {product.PricePLN} zł</p>
-                  <div>
-                    <p>usuń</p>
-                    <p>Dodaj do koszyka</p>
-                  </div>
-                </div>
-              </li>
-            );
+            return <FavouriteProduct key={product.id} product={product} />;
           })}
-        </ul>
+        </div>
       </div>
     </CenteredContent>
   );
