@@ -5,7 +5,7 @@ import styles from './FlexContainer.module.css';
 export function FlexContainer({ products }) {
   return (
     <CenteredContent>
-      <div className={styles.favouritesList}>
+      <div className={styles.cardsList}>
         <h2>Ulubione</h2>
         <div>
           {products.map((product) => {
