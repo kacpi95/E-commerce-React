@@ -1,8 +1,9 @@
-import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
+import { CartSummary } from '../../components/CartSummary/CartSummary';
+import { CartProductsList } from '../../components/CartProductsList/CartProductsList';
 import { Layout } from '../../components/Layout/Layout';
 
 export function Cart() {
-  const favouriteProducts = [
+  const cartProducts = [
     {
       id: 1,
       gender: 'men',
@@ -44,7 +45,8 @@ export function Cart() {
   ];
   return (
     <Layout>
-      <FlexContainer products={favouriteProducts} />
+      <CartProductsList products={cartProducts} />
+      <CartSummary />
     </Layout>
   );
 }

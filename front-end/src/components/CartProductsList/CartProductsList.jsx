@@ -1,28 +1,18 @@
+import { CartProduct } from '../CartProduct/CartProduct';
+import { CenteredContent } from '../CenteredContent/CenteredContent';
 import styles from './CartProductsList.module.css';
-import REMOVE_IMG from '../../assets/remove.svg';
 
-export function CartProductList({ product }) {
+export function CartProductsList({ products }) {
   return (
-    <div className={styles.favouriteProduct}>
-      <img src={`${product.photos[0]}`} />
-      <div className={styles.favouriteProductInfo}>
-        <div className={styles.topRow}>
-          <h3>
-            {product.brand} {product.productName}
-          </h3>
-          <p>{product.pricePLN}zł</p>
-        </div>
-        <p className={styles.priceRow}>
-          <span>Cena: </span>
-          {product.pricePLN}zł
-        </p>
-        <div className={styles.buttonRow}>
-          <button>
-            <img src={REMOVE_IMG} />
-            Usuń
-          </button>
+    <CenteredContent>
+      <div className={styles.cardsList}>
+        <h2>Ulubione</h2>
+        <div>
+          {products.map((product) => {
+            return <CartProduct key={product.id} product={product} />;
+          })}
         </div>
       </div>
-    </div>
+    </CenteredContent>
   );
 }
