@@ -25,3 +25,6 @@
 .expandableMenu a:gloabl(.active) {
   font-weight: 700;
 }
+.expanded {
+  transform: rotate(180deg);
+}
