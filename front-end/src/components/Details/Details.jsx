@@ -8,6 +8,10 @@ export function Details({ product }) {
   const items = [
     {
       title: 'Opis produktu',
+      content: product.description,
+    },
+    {
+      title: 'Wskazówki pielęgnacyjne ',
       content: product.maintenanceInfo,
     },
   ];

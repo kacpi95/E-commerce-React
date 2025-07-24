@@ -7,7 +7,7 @@ export function Accordion({ items }) {
       {items.map((item) => {
         return (
           <li key={item.title}>
-            <div>
+            <div className={styles.item}>
               <p>{item.title}</p>
               <img src={ARROW_ICON} />
             </div>
