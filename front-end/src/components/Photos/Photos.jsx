@@ -1,15 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import styles from './Photos.module.css';
 import { FlexContainer } from '../FlexContainer/FlexContainer';
 
 export function Photos({ product }) {
   return (
     <FlexContainer>
-      <div>
+      <div className={styles.thumbnails}>
         {product.photos.map((photo) => {
           return <img key={photo} src={photo} />;
         })}
       </div>
-      <img src={product.photos[0]} />
+      <img className={styles.mainPhoto} src={product.photos[0]} />
     </FlexContainer>
   );
 }
