@@ -2,8 +2,15 @@ import { FullWidthButton } from '../FullWidthButton/FullWidthButton';
 import styles from './Details.module.css';
 import DELIVERY_ICON from '../../assets/delivery.svg';
 import RETURN_ICON from '../../assets/return.svg';
+import { Accordion } from '../Accordion/Accordion';
 
 export function Details({ product }) {
+  const items = [
+    {
+      title: 'Opis produktu',
+      content: product.maintenanceInfo,
+    },
+  ];
   return (
     <div className={styles.details}>
       <h2>{product.brand}</h2>
@@ -20,6 +27,7 @@ export function Details({ product }) {
           Zwrot do 100 dni
         </li>
       </ul>
+      <Accordion items={items} />
     </div>
   );
 }
