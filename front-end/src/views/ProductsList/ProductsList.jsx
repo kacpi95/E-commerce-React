@@ -3,6 +3,7 @@ import { ExpandableMenu } from '../../components/ExpandableMenu/ExpandableMenu';
 import { Layout } from '../../components/Layout/Layout';
 import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
 import { Products } from '../../components/Products/Products';
+import { Pagination } from '../../components/Pagination/Pagination';
 
 export function ProductsList() {
   const products = [
@@ -166,6 +167,7 @@ export function ProductsList() {
         <div>
           <Breadcrumbs />
           <Products headerText={'swetry'} products={products} />
+          <Pagination numberOfPages={5} />
         </div>
       </FlexContainer>
     </Layout>
