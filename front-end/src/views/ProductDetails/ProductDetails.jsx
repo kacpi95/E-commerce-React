@@ -1,4 +1,5 @@
 import { Breadcrumbs } from '../../components/Breadcrumbs/Breadcrumbs';
+import { Details } from '../../components/Details/Details';
 import { ExpandableMenu } from '../../components/ExpandableMenu/ExpandableMenu';
 import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
 import { Layout } from '../../components/Layout/Layout';
@@ -31,7 +32,10 @@ export function ProductDetails() {
         <ExpandableMenu />
         <div>
           <Breadcrumbs />
-          <Photos product={product} />
+          <FlexContainer>
+            <Photos product={product} />
+            <Details product={product} />
+          </FlexContainer>
         </div>
       </FlexContainer>
     </Layout>
