@@ -10,6 +10,8 @@ import { ProductsList } from './views/ProductsList/ProductsList.jsx';
 import { ProductDetails } from './views/ProductDetails/ProductDetails.jsx';
 import { Layout } from './components/Layout/Layout.jsx';
 import { mainPageLoader } from './api/mainPageLoader.js';
+import { BACK_END_URL } from './constants/api.js';
+import { PATH_TO_ENDPOINT_MAPPING } from './constants/api.js';
 
 const router = createBrowserRouter([
   {
@@ -25,17 +27,17 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: '/:gender',
+        path: '/:gender?',
         element: <MainPage />,
         loader: mainPageLoader,
+      },
+      {
+        path: '/:gender/:category',
+        element: <ProductsList />,
       },
     ],
   },
 
-  {
-    path: '/productsList',
-    element: <ProductsList />,
-  },
   {
     path: '/productDetails',
     element: <ProductDetails />,
