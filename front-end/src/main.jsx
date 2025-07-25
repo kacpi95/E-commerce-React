@@ -12,6 +12,7 @@ import { Layout } from './components/Layout/Layout.jsx';
 import { mainPageLoader } from './api/mainPageLoader.js';
 import { BACK_END_URL } from './constants/api.js';
 import { PATH_TO_ENDPOINT_MAPPING } from './constants/api.js';
+import { productListLoader } from './api/productListLoader.js';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       {
         path: '/:gender/:category',
         element: <ProductsList />,
+        loader: productListLoader,
       },
     ],
   },
