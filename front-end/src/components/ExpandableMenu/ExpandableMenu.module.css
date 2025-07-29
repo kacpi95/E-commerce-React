@@ -22,7 +22,7 @@
   padding-left: 2rem;
   margin-top: 0.5rem;
 }
-.expandableMenu a:gloabl(.active) {
+.expandableMenu a:global(.active) {
   font-weight: 700;
 }
 .expanded {
