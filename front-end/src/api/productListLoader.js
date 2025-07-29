@@ -4,7 +4,10 @@ import { CATEGORIES } from '../constants/category';
 
 export function productListLoader({
   params: { gender, category, subcategory },
+  request,
 }) {
+  const pageUrl = new URL(request.url);
+  const page = pageUrl.searchParams.get('page') || 1;
   const foundCategory = CATEGORIES.find((c) => c.path === category);
   const foundGender = PATH_TO_ENDPOINT_MAPPING[gender];
 
@@ -21,7 +24,7 @@ export function productListLoader({
         return redirect('/kobieta');
       }
     }
-    url = `${url}&_limit8&_page=1`;
+    url = `${url}&_limit8&_page=${page}`;
 
     return fetch(url).then((response) => {
       const numberOfPages = Math.ceil(
