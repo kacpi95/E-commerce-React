@@ -11,3 +11,9 @@ export const PATH_TO_GENDER_NAME = {
 };
 
 export const BACK_END_URL = 'http://localhost:3000';
+
+export const ENDPOINT_TO_PATH_MAPPING = {
+  men: 'mezczyzna',
+  women: 'kobieta',
+  children: 'dziecko',
+};

@@ -27,17 +27,15 @@ export function ProductDetails() {
   };
 
   return (
-    <Layout>
-      <FlexContainer>
-        <ExpandableMenu />
-        <div style={{ width: '100%' }}>
-          <Breadcrumbs />
-          <FlexContainer>
-            <Photos product={product} />
-            <Details product={product} />
-          </FlexContainer>
-        </div>
-      </FlexContainer>
-    </Layout>
+    <FlexContainer>
+      <ExpandableMenu />
+      <div style={{ width: '100%' }}>
+        <Breadcrumbs />
+        <FlexContainer>
+          <Photos product={product} />
+          <Details product={product} />
+        </FlexContainer>
+      </div>
+    </FlexContainer>
   );
 }
