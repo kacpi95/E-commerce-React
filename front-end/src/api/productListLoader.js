@@ -21,8 +21,18 @@ export function productListLoader({
         return redirect('/kobieta');
       }
     }
+    url = `${url}&_limit8&_page=1`;
 
-    return fetch(url);
+    return fetch(url).then((response) => {
+      const numberOfPages = Math.ceil(
+        Number(response.headers.get('X-Total-Count') / 8)
+      );
+      console.log(numberOfPages);
+
+      return response.json().then((products) => {
+        return { products, numberOfPages };
+      });
+    });
   } else {
     redirect('/kobieta');
   }
