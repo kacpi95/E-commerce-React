@@ -13,6 +13,7 @@ import { mainPageLoader } from './api/mainPageLoader.js';
 import { productListLoader } from './api/productListLoader.js';
 import { productLoader } from './api/productLoader.js';
 import { addProdcutToFavourites } from './api/addProductToFavouritesAction.js';
+import { favouritesLoader } from './api/favouritesLoader.js';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: '/ulubione',
         element: <Favourites />,
+        loader: favouritesLoader,
       },
       {
         path: '/koszyk',
