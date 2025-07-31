@@ -1,6 +1,9 @@
 .product {
   position: relative;
 }
+.product button {
+  border: none;
+}
 .product img {
   width: 250px;
   height: 400px;
