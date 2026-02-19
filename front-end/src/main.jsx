@@ -15,6 +15,7 @@ import { productLoader } from './api/productLoader.js';
 import { addProductToFavourites } from './api/addProductToFavouritesAction.js';
 import { favouritesLoader } from './api/favouritesLoader.js';
 import { deleteFavouriteAction } from './api/deleteFavouriteAction.js';
+import { AuthProvider } from './contexts/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
+  </StrictMode>,
 );
