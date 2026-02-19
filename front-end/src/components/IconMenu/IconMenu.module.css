@@ -2,13 +2,14 @@
   display: flex;
   gap: 10px;
   padding: 0;
+  margin: 0;
 }
 
 .iconMenu li {
   position: relative;
 }
 
-.iconMenu li a {
+.iconLink {
   display: grid;
   width: 42px;
   height: 42px;
@@ -21,7 +22,7 @@
     background-color 0.15s ease;
 }
 
-.iconMenu li a:hover {
+.iconLink:hover {
   transform: translateY(-1px);
   background: #ededed;
 }
@@ -46,4 +47,65 @@
   font-weight: 700;
   background-color: var(--color-yellow);
   border: 2px solid var(--color-white);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+  border-right: 1px solid var(--color-text-default);
+}
+
+.authLink {
+  font-weight: 700;
+  color: var(--color-text-default);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.authLink:hover {
+  text-decoration: underline;
+}
+
+.authBtn {
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--color-text-default);
+}
+
+.authBtn:hover {
+  opacity: 0.92;
+}
+
+.userEmail {
+  max-width: 160px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--color-text-grey);
+  text-overflow: ellipsis;
+}
+
+.logoutBtn {
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--color-text-default);
+  background: transparent;
+}
+
+.logoutBtn:hover {
+  background: var(--color-grey);
 }

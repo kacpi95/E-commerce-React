@@ -28,19 +28,18 @@ const router = createBrowserRouter([
     path: '/delete-from-favourites/:favouriteId',
     action: deleteFavouriteAction,
   },
-
-  {
-    path: '/login',
-    element: <Login />,
-  },
-  {
-    path: '/register',
-    element: <Register />,
-  },
   {
     path: '',
     element: <Layout />,
     children: [
+      {
+        path: '/login',
+        element: <Login />,
+      },
+      {
+        path: '/register',
+        element: <Register />,
+      },
       {
         path: '/ulubione',
         element: <Favourites />,
