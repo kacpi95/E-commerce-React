@@ -5,7 +5,7 @@ export function getAuthHeaders() {
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
-export async function login({ email, password }) {
+export async function loginRequest({ email, password }) {
   const res = await fetch(`${BACK_END_URL}/auth/login`, {
     method: 'POST',
     headers: { 'Content-type': 'application/json' },
@@ -20,7 +20,7 @@ export async function login({ email, password }) {
   return data;
 }
 
-export async function register({ email, password }) {
+export async function registerRequest({ email, password }) {
   const res = await fetch(`${BACK_END_URL}/auth/register`, {
     method: 'POST',
     headers: { 'Content-type': 'application/json' },

@@ -16,6 +16,7 @@ import { addProductToFavourites } from './api/addProductToFavouritesAction.js';
 import { favouritesLoader } from './api/favouritesLoader.js';
 import { deleteFavouriteAction } from './api/deleteFavouriteAction.js';
 import { AuthProvider } from './contexts/AuthProvider.jsx';
+import { Login } from './views/Auth/Login/Login.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
   {
     path: '/delete-from-favourites/:favouriteId',
     action: deleteFavouriteAction,
+  },
+
+  {
+    path: '/login',
+    element: <Login />,
   },
 
   {
