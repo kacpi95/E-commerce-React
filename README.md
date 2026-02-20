@@ -1,10 +1,10 @@
 # Clothiq – Fullstack E-commerce Clothing Store
 
-**React · React Router · Node.js · Express · Prisma · MySQL**
+**React · React Router · Node.js · Express · Prisma · MySQL · JWT**
 
 A full-stack e-commerce application where users can browse clothing categories, view product details, manage favourites, and use a client-side shopping cart.
 
-The project focuses on clean component architecture, reusable UI elements, consistent global styling, and a structured backend powered by Prisma ORM and MySQL.
+The project focuses on clean component architecture, reusable UI elements, consistent global styling, and a structured backend powered by Prisma ORM and MySQL. Authentication is implemented with JWT, enabling account features such as favourites persistence.
 
 ---
 
@@ -37,12 +37,23 @@ The project focuses on clean component architecture, reusable UI elements, consi
 
 ---
 
+###Authentication (JWT)
+
+- Register & login pages
+- JWT token stored in localStorage
+- Persistent session after refresh (token-based)
+- /auth/me endpoint to verify logged-in user
+- Conditional UI in header (login/register vs email/logout)
+
+---
+
 ### Favourites
 
 - Add products to favourites
 - Remove favourites
 - Backend persistence (Prisma + MySQL)
 - Favourite list page
+- Auth-protected API requests (Bearer token)
 
 ---
 
@@ -89,6 +100,8 @@ The project focuses on clean component architecture, reusable UI elements, consi
 - Express
 - Prisma ORM
 - MySQL
+- JWT
+- bcrypt
 - dotenv
 - CORS
 
@@ -97,6 +110,10 @@ The project focuses on clean component architecture, reusable UI elements, consi
 ## Architecture Overview
 
 - REST API built with Express
+- JWT authentication flow:
+  - POST /auth/register
+  - POST /auth/login
+  - GET /auth/me
 - Prisma ORM for database access
 - Relational data modeling (Products, Photos, Favourites)
 - Frontend data fetching via React Router loaders
@@ -114,6 +131,7 @@ back-end/
   src/
     product/
     favourite/
+    auth/
     constants/
   public/
     product-photos/
@@ -146,6 +164,8 @@ cd ecommerce-platform-fullstack
 ```bash
 DATABASE_URL="mysql://user:password@localhost:3306/ecommerceclothesdb"
 PORT=3000
+JWT_SECRET='your_secret_key'
+
 ```
 
 ### 3. Install dependencies
@@ -217,6 +237,7 @@ http://localhost:5173
 - Building a fullstack e-commerce architecture
 - Designing relational database models with Prisma
 - Structuring Express controllers and services
+- Implementing JWT authentication (register/login/me)
 - Handling frontend-backend integration
 - Managing state with Context API
 - Implementing client-side cart logic
@@ -228,7 +249,6 @@ http://localhost:5173
 
 ## Future Improvements
 
-- User authentication (login / registration)
 - User accounts with order history
 - Checkout flow after cart
 - Payment integration (Stripe / PayU)
