@@ -1,8 +1,8 @@
-import { Breadcrumbs } from '../../components/Breadcrumbs/Breadcrumbs';
-import { ExpandableMenu } from '../../components/ExpandableMenu/ExpandableMenu';
-import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
-import { Products } from '../../components/Products/Products';
-import { Pagination } from '../../components/Pagination/Pagination';
+import { Breadcrumbs } from '../../features/products/Breadcrumbs/Breadcrumbs';
+import { ExpandableMenu } from '../../features/products/ExpandableMenu/ExpandableMenu';
+import { FlexContainer } from '../../shared/ui/FlexContainer/FlexContainer';
+import { Products } from '../../features/products/Products/Products';
+import { Pagination } from '../../shared/ui/Pagination/Pagination';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { CATEGORIES } from '../../constants/category';
 
@@ -16,7 +16,7 @@ export function ProductsList() {
 
   if (params.subcategory) {
     foundSubcategory = foundCategory.subcategories.find(
-      (sc) => sc.path === params.subcategory
+      (sc) => sc.path === params.subcategory,
     );
   }
   return (

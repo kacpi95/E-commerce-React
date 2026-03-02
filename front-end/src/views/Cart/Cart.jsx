@@ -1,6 +1,6 @@
-import { CartSummary } from '../../components/CartSummary/CartSummary';
-import { CartProductsList } from '../../components/CartProductsList/CartProductsList';
-import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
+import { CartSummary } from '../../features/cart/CartSummary/CartSummary';
+import { CartProductsList } from '../../features/cart/CartProductsList/CartProductsList';
+import { FlexContainer } from '../../shared/ui/FlexContainer/FlexContainer';
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/CartContext';
 

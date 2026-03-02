@@ -1,5 +1,5 @@
-import { Hero } from '../../components/Hero/Hero';
-import { Products } from '../../components/Products/Products';
+import { Hero } from '../../features/home/Hero/Hero';
+import { Products } from '../../features/products/Products/Products';
 import { useLoaderData, useParams } from 'react-router-dom';
 import womenHero from '../../assets/women.jpg';
 import menHero from '../../assets/men.jpg';

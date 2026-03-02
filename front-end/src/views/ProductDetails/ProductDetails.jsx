@@ -1,9 +1,9 @@
 import { useLoaderData } from 'react-router-dom';
-import { Breadcrumbs } from '../../components/Breadcrumbs/Breadcrumbs';
-import { Details } from '../../components/Details/Details';
-import { ExpandableMenu } from '../../components/ExpandableMenu/ExpandableMenu';
-import { FlexContainer } from '../../components/FlexContainer/FlexContainer';
-import { Photos } from '../../components/Photos/Photos';
+import { Breadcrumbs } from '../../features/products/Breadcrumbs/Breadcrumbs';
+import { Details } from '../../features/products/Details/Details';
+import { ExpandableMenu } from '../../features/products/ExpandableMenu/ExpandableMenu';
+import { FlexContainer } from '../../shared/ui/FlexContainer/FlexContainer';
+import { Photos } from '../../features/products/Photos/Photos';
 
 export function ProductDetails() {
   const product = useLoaderData();

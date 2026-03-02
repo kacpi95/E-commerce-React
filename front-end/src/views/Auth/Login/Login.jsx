@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { loginRequest } from '../../../api/auth';
 import { AuthContext } from '../../../contexts/AuthContext';
-import { FullWidthButton } from '../../../components/FullWidthButton/FullWidthButton';
+import { FullWidthButton } from '../../../shared/ui/FullWidthButton/FullWidthButton';
 import styles from '../Auth.module.css';
 
 export function Login() {
