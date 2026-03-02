@@ -78,9 +78,13 @@ The project focuses on clean component architecture, reusable UI elements, consi
 
 ## Screenshots
 
-| Home                          | Subcategory                                 | Favorite                              | Bag                         |
-| ----------------------------- | ------------------------------------------- | ------------------------------------- | --------------------------- |
-| ![Home](screenshots/home.png) | ![Subcategory](screenshots/subcategory.png) | ![Favorite](screenshots/favorite.png) | ![Bag](screenshots/bag.png) |
+| Home                             | Subcategory                                 | Favorite                              | Bag                         |
+| -------------------------------- | ------------------------------------------- | ------------------------------------- | --------------------------- |
+| ![Home](screenshots/home-v2.png) | ![Subcategory](screenshots/subcategory.png) | ![Favorite](screenshots/favorite.png) | ![Bag](screenshots/bag.png) |
+
+|     | Login                           | Register                              |     |
+| --- | ------------------------------- | ------------------------------------- | --- |
+|     | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |     |
 
 ---
 
