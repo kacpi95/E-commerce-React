@@ -8,8 +8,10 @@ export function CartProductsList({ products }) {
       <div className={styles.cardsList}>
         <h2>Ulubione</h2>
         <div>
-          {products.map((product) => {
-            return <CartProduct key={product.id} product={product} />;
+          {products.map((product, index) => {
+            return (
+              <CartProduct key={`${product.id}-${index}`} product={product} />
+            );
           })}
         </div>
       </div>
