@@ -2,7 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 
-import productRouter from './src/product/product.routes.js';
+import authRouter from './src/auth/auth.routes.js';
 
 const app = express();
 app.use(cors());
