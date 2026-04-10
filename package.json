@@ -14,7 +14,7 @@
     "front-end": "npm run dev --workspace=front-end",
     "back-end": "npm run dev --workspace=back-end",
     "dev": "npm-run-all --parallel front-end back-end",
-    "build": "npm run build --workspace=front-end && rm -rf back-end/public && mkdir -p back-end/public && cp -r front-end/dist/* back-end/public/",
+    "build": "npm install --workspace=front-end && npm install --workspace=back-end && npm run build --workspace=front-end && rm -rf back-end/public && mkdir -p back-end/public && cp -r front-end/dist/* back-end/public/ && npm run prisma:generate --workspace=back-end && npm run prisma:migrate --workspace=back-end",
     "start": "npm run start --workspace=back-end"
   }
 }
