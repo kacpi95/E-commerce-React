@@ -10,7 +10,7 @@ export const PATH_TO_GENDER_NAME = {
   dziecko: 'Dziecko',
 };
 
-export const BACK_END_URL = import.meta.env.VITE_BACK_END_URL || '';
+export const BACK_END_URL = 'http://localhost:3000';
 
 export const ENDPOINT_TO_PATH_MAPPING = {
   men: 'mezczyzna',

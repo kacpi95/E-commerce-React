@@ -8,6 +8,17 @@ export async function mainPageLoader({ params }) {
   if (!gender) return redirect('/kobieta');
 
   const res = await fetch(`${BACK_END_URL}/products/${gender}/bestsellers`);
+
+  if (!res.ok) {
+    throw new Error(`Failed to load bestsellers (${res.status})`);
+  }
+
+  const contentType = res.headers.get('content-type') || '';
+  if (!contentType.includes('application/json')) {
+    throw new Error(
+      `Expected JSON from API, got "${contentType || 'unknown'}" instead.`,
+    );
+  }
   const bestsellers = await res.json();
 
   const heroImageUrl = `/hero/${genderPath}.jpg`;

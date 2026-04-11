@@ -11,6 +11,7 @@
   },
   "scripts": {
     "reset": "cp \"./back-end/backup/original_db.json\" ./back-end/db.json",
+    "postinstall": "npm run prisma:generate --workspace=back-end",
     "front-end": "npm run dev --workspace=front-end",
     "back-end": "npm run dev --workspace=back-end",
     "dev": "npm-run-all --parallel front-end back-end",
