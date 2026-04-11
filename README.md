@@ -1,5 +1,7 @@
 # Clothiq – Fullstack E-commerce Clothing Store
 
+**Live:** https://clothiq-dem.pl
+
 **React · React Router · Node.js · Express · Prisma · MySQL · JWT**
 
 A full-stack e-commerce application where users can browse clothing categories, view product details, manage favourites, and use a client-side shopping cart.
