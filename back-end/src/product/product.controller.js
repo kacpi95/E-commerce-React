@@ -44,8 +44,11 @@ export const getBestsellers = async (req, res) => {
     const gender = req.params.gender;
     const products = await productService.getBestsellers(gender);
     res.json(products);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Failed to fetch bestsellers' });
+  } catch (error) {
+    console.error('BESTSELLERS ERROR:', error);
+    res.status(500).json({
+      message: 'Failed to fetch bestsellers',
+      error: error.message,
+    });
   }
 };
