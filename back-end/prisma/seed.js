@@ -24,9 +24,9 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-1.jpg',
-        'http://localhost:3000/product-photos/women-shoes-2.jpg',
-        'http://localhost:3000/product-photos/women-shoes-3.jpg',
+        '/product-photos/women-shoes-1.jpg',
+        '/product-photos/women-shoes-2.jpg',
+        '/product-photos/women-shoes-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -43,8 +43,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-5.jpg',
-        'http://localhost:3000/product-photos/women-shoes-6.jpg',
+        '/product-photos/women-shoes-5.jpg',
+        '/product-photos/women-shoes-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -61,9 +61,9 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-t-shirt-1.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-2.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-3.jpg',
+        '/product-photos/women-t-shirt-1.jpg',
+        '/product-photos/women-t-shirt-2.jpg',
+        '/product-photos/women-t-shirt-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -80,8 +80,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-trousers-1.jpg',
-        'http://localhost:3000/product-photos/women-trousers-2.jpg',
+        '/product-photos/women-trousers-1.jpg',
+        '/product-photos/women-trousers-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -101,8 +101,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/man-t-shirt-1.jpg',
-        'http://localhost:3000/product-photos/man-t-shirt-2.jpg',
+        '/product-photos/man-t-shirt-1.jpg',
+        '/product-photos/man-t-shirt-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -119,8 +119,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/man-t-shirt-3.jpg',
-        'http://localhost:3000/product-photos/man-t-shirt-4.jpg',
+        '/product-photos/man-t-shirt-3.jpg',
+        '/product-photos/man-t-shirt-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -137,8 +137,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-t-shirt-5.jpg',
-        'http://localhost:3000/product-photos/man-t-shirt-6.jpg',
+        '/product-photos/man-t-shirt-5.jpg',
+        '/product-photos/man-t-shirt-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -154,7 +154,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 199,
       priceUSD: 49,
-      photos: ['http://localhost:3000/product-photos/man-t-shirt-7.jpg'],
+      photos: ['/product-photos/man-t-shirt-7.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -173,8 +173,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-shoes-3.jpg',
-        'http://localhost:3000/product-photos/children-shoes-4.jpg',
+        '/product-photos/children-shoes-3.jpg',
+        '/product-photos/children-shoes-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -191,10 +191,10 @@ async function main() {
       pricePLN: 199,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/children-shoes-5.jpg',
-        'http://localhost:3000/product-photos/children-shoes-6.jpg',
-        'http://localhost:3000/product-photos/children-shoes-7.jpg',
-        'http://localhost:3000/product-photos/children-shoes-8.jpg',
+        '/product-photos/children-shoes-5.jpg',
+        '/product-photos/children-shoes-6.jpg',
+        '/product-photos/children-shoes-7.jpg',
+        '/product-photos/children-shoes-8.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -211,8 +211,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/children-trousers-1.jpg',
-        'http://localhost:3000/product-photos/children-trousers-2.jpg',
+        '/product-photos/children-trousers-1.jpg',
+        '/product-photos/children-trousers-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -229,8 +229,8 @@ async function main() {
       pricePLN: 599,
       priceUSD: 119,
       photos: [
-        'http://localhost:3000/product-photos/children-trousers-5.jpg',
-        'http://localhost:3000/product-photos/children-trousers-6.jpg',
+        '/product-photos/children-trousers-5.jpg',
+        '/product-photos/children-trousers-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -250,8 +250,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/man-t-shirt-1.jpg',
-        'http://localhost:3000/product-photos/man-t-shirt-2.jpg',
+        '/product-photos/man-t-shirt-1.jpg',
+        '/product-photos/man-t-shirt-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -267,7 +267,7 @@ async function main() {
       brand: 'Top Brand',
       pricePLN: 49,
       priceUSD: 10,
-      photos: ['http://localhost:3000/product-photos/man-t-shirt-7.jpg'],
+      photos: ['/product-photos/man-t-shirt-7.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -283,8 +283,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-t-shirt-6.jpg',
-        'http://localhost:3000/product-photos/man-t-shirt-5.jpg',
+        '/product-photos/man-t-shirt-6.jpg',
+        '/product-photos/man-t-shirt-5.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -301,8 +301,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-t-shirt-4.jpg',
-        'http://localhost:3000/product-photos/man-t-shirt-3.jpg',
+        '/product-photos/man-t-shirt-4.jpg',
+        '/product-photos/man-t-shirt-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -319,8 +319,8 @@ async function main() {
       pricePLN: 129,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/man-sweater-1.jpg',
-        'http://localhost:3000/product-photos/man-sweater-2.jpg',
+        '/product-photos/man-sweater-1.jpg',
+        '/product-photos/man-sweater-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -336,7 +336,7 @@ async function main() {
       brand: 'Top Brand',
       pricePLN: 49,
       priceUSD: 10,
-      photos: ['http://localhost:3000/product-photos/man-sweater-3.jpg'],
+      photos: ['/product-photos/man-sweater-3.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -351,7 +351,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 199,
       priceUSD: 49,
-      photos: ['http://localhost:3000/product-photos/man-sweater-4.jpg'],
+      photos: ['/product-photos/man-sweater-4.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -367,8 +367,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-sweater-1.jpg',
-        'http://localhost:3000/product-photos/man-sweater-2.jpg',
+        '/product-photos/man-sweater-1.jpg',
+        '/product-photos/man-sweater-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -385,8 +385,8 @@ async function main() {
       pricePLN: 129,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/man-trousers-1.jpg',
-        'http://localhost:3000/product-photos/man-trousers-2.jpg',
+        '/product-photos/man-trousers-1.jpg',
+        '/product-photos/man-trousers-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -403,8 +403,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/man-trousers-3.jpg',
-        'http://localhost:3000/product-photos/man-trousers-4.jpg',
+        '/product-photos/man-trousers-3.jpg',
+        '/product-photos/man-trousers-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -421,9 +421,9 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-trousers-5.jpg',
-        'http://localhost:3000/product-photos/man-trousers-6.jpg',
-        'http://localhost:3000/product-photos/man-trousers-7.jpg',
+        '/product-photos/man-trousers-5.jpg',
+        '/product-photos/man-trousers-6.jpg',
+        '/product-photos/man-trousers-7.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -440,9 +440,9 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-trousers-7.jpg',
-        'http://localhost:3000/product-photos/man-trousers-6.jpg',
-        'http://localhost:3000/product-photos/man-trousers-5.jpg',
+        '/product-photos/man-trousers-7.jpg',
+        '/product-photos/man-trousers-6.jpg',
+        '/product-photos/man-trousers-5.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -459,9 +459,9 @@ async function main() {
       pricePLN: 129,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-1.jpg',
-        'http://localhost:3000/product-photos/man-shoes-2.jpg',
-        'http://localhost:3000/product-photos/man-shoes-3.jpg',
+        '/product-photos/man-shoes-1.jpg',
+        '/product-photos/man-shoes-2.jpg',
+        '/product-photos/man-shoes-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -478,8 +478,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-4.jpg',
-        'http://localhost:3000/product-photos/man-shoes-5.jpg',
+        '/product-photos/man-shoes-4.jpg',
+        '/product-photos/man-shoes-5.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -496,9 +496,9 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-6.jpg',
-        'http://localhost:3000/product-photos/man-shoes-7.jpg',
-        'http://localhost:3000/product-photos/man-shoes-8.jpg',
+        '/product-photos/man-shoes-6.jpg',
+        '/product-photos/man-shoes-7.jpg',
+        '/product-photos/man-shoes-8.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -515,9 +515,9 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-3.jpg',
-        'http://localhost:3000/product-photos/man-shoes-2.jpg',
-        'http://localhost:3000/product-photos/man-shoes-1.jpg',
+        '/product-photos/man-shoes-3.jpg',
+        '/product-photos/man-shoes-2.jpg',
+        '/product-photos/man-shoes-1.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -533,7 +533,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 129,
       priceUSD: 39,
-      photos: ['http://localhost:3000/product-photos/man-shoes-8.jpg'],
+      photos: ['/product-photos/man-shoes-8.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -549,8 +549,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-9.jpg',
-        'http://localhost:3000/product-photos/man-shoes-10.jpg',
+        '/product-photos/man-shoes-9.jpg',
+        '/product-photos/man-shoes-10.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -567,8 +567,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-11.jpg',
-        'http://localhost:3000/product-photos/man-shoes-12.jpg',
+        '/product-photos/man-shoes-11.jpg',
+        '/product-photos/man-shoes-12.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -585,8 +585,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 49,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-13.jpg',
-        'http://localhost:3000/product-photos/man-shoes-14.jpg',
+        '/product-photos/man-shoes-13.jpg',
+        '/product-photos/man-shoes-14.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -603,8 +603,8 @@ async function main() {
       pricePLN: 129,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/man-shoes-11.jpg',
-        'http://localhost:3000/product-photos/man-shoes-12.jpg',
+        '/product-photos/man-shoes-11.jpg',
+        '/product-photos/man-shoes-12.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -620,7 +620,7 @@ async function main() {
       brand: 'Top Brand',
       pricePLN: 49,
       priceUSD: 10,
-      photos: ['http://localhost:3000/product-photos/man-bag-1.jpg'],
+      photos: ['/product-photos/man-bag-1.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -635,7 +635,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 199,
       priceUSD: 49,
-      photos: ['http://localhost:3000/product-photos/man-bag-2.jpg'],
+      photos: ['/product-photos/man-bag-2.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -650,7 +650,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 199,
       priceUSD: 49,
-      photos: ['http://localhost:3000/product-photos/man-watch-1.jpg'],
+      photos: ['/product-photos/man-watch-1.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -665,7 +665,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 129,
       priceUSD: 39,
-      photos: ['http://localhost:3000/product-photos/man-watch-2.jpg'],
+      photos: ['/product-photos/man-watch-2.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -680,7 +680,7 @@ async function main() {
       brand: 'Sun Tzu',
       pricePLN: 129,
       priceUSD: 39,
-      photos: ['http://localhost:3000/product-photos/man-watch-3.jpg'],
+      photos: ['/product-photos/man-watch-3.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -696,8 +696,8 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-7.jpg',
-        'http://localhost:3000/product-photos/women-shoes-8.jpg',
+        '/product-photos/women-shoes-7.jpg',
+        '/product-photos/women-shoes-8.jpg',
       ],
       description: 'Opis produktu pobrany z back endu ;)',
       maintenanceInfo: 'Informacje o konserwacji pobrane z back-endu',
@@ -711,7 +711,7 @@ async function main() {
       brand: 'Sun zi',
       pricePLN: 149,
       priceUSD: 39,
-      photos: ['http://localhost:3000/product-photos/women-shoes-4.jpg'],
+      photos: ['/product-photos/women-shoes-4.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -726,7 +726,7 @@ async function main() {
       brand: 'Sun zi',
       pricePLN: 299,
       priceUSD: 59,
-      photos: ['http://localhost:3000/product-photos/women-sweater-3.jpg'],
+      photos: ['/product-photos/women-sweater-3.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -742,8 +742,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-trousers-3.jpg',
-        'http://localhost:3000/product-photos/women-trousers-4.jpg',
+        '/product-photos/women-trousers-3.jpg',
+        '/product-photos/women-trousers-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -760,9 +760,9 @@ async function main() {
       pricePLN: 49,
       priceUSD: 10,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-1.jpg',
-        'http://localhost:3000/product-photos/women-shoes-2.jpg',
-        'http://localhost:3000/product-photos/women-shoes-3.jpg',
+        '/product-photos/women-shoes-1.jpg',
+        '/product-photos/women-shoes-2.jpg',
+        '/product-photos/women-shoes-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -779,9 +779,9 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-9.jpg',
-        'http://localhost:3000/product-photos/women-shoes-10.jpg',
-        'http://localhost:3000/product-photos/women-shoes-11.jpg',
+        '/product-photos/women-shoes-9.jpg',
+        '/product-photos/women-shoes-10.jpg',
+        '/product-photos/women-shoes-11.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -798,9 +798,9 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-12.jpg',
-        'http://localhost:3000/product-photos/women-shoes-13.jpg',
-        'http://localhost:3000/product-photos/women-shoes-14.jpg',
+        '/product-photos/women-shoes-12.jpg',
+        '/product-photos/women-shoes-13.jpg',
+        '/product-photos/women-shoes-14.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -817,9 +817,9 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-bag-1.jpg',
-        'http://localhost:3000/product-photos/women-bag-2.jpg',
-        'http://localhost:3000/product-photos/women-bag-3.jpg',
+        '/product-photos/women-bag-1.jpg',
+        '/product-photos/women-bag-2.jpg',
+        '/product-photos/women-bag-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -835,7 +835,7 @@ async function main() {
       brand: 'Sun zi',
       pricePLN: 299,
       priceUSD: 59,
-      photos: ['http://localhost:3000/product-photos/women-bag-4.jpg'],
+      photos: ['/product-photos/women-bag-4.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -851,8 +851,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-watch-1.jpg',
-        'http://localhost:3000/product-photos/women-watch-2.jpg',
+        '/product-photos/women-watch-1.jpg',
+        '/product-photos/women-watch-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -869,8 +869,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-watch-3.jpg',
-        'http://localhost:3000/product-photos/women-watch-4.jpg',
+        '/product-photos/women-watch-3.jpg',
+        '/product-photos/women-watch-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -887,9 +887,9 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-t-shirt-4.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-5.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-6.jpg',
+        '/product-photos/women-t-shirt-4.jpg',
+        '/product-photos/women-t-shirt-5.jpg',
+        '/product-photos/women-t-shirt-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -906,10 +906,10 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-t-shirt-7.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-8.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-9.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-10.jpg',
+        '/product-photos/women-t-shirt-7.jpg',
+        '/product-photos/women-t-shirt-8.jpg',
+        '/product-photos/women-t-shirt-9.jpg',
+        '/product-photos/women-t-shirt-10.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -926,8 +926,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-trousers-2.jpg',
-        'http://localhost:3000/product-photos/women-trousers-1.jpg',
+        '/product-photos/women-trousers-2.jpg',
+        '/product-photos/women-trousers-1.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -944,9 +944,9 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-2.jpg',
-        'http://localhost:3000/product-photos/women-shoes-3.jpg',
-        'http://localhost:3000/product-photos/women-shoes-1.jpg',
+        '/product-photos/women-shoes-2.jpg',
+        '/product-photos/women-shoes-3.jpg',
+        '/product-photos/women-shoes-1.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -963,10 +963,10 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-t-shirt-9.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-7.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-8.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-10.jpg',
+        '/product-photos/women-t-shirt-9.jpg',
+        '/product-photos/women-t-shirt-7.jpg',
+        '/product-photos/women-t-shirt-8.jpg',
+        '/product-photos/women-t-shirt-10.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -983,8 +983,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-trousers-3.jpg',
-        'http://localhost:3000/product-photos/women-trousers-4.jpg',
+        '/product-photos/women-trousers-3.jpg',
+        '/product-photos/women-trousers-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1000,7 +1000,7 @@ async function main() {
       brand: 'Sun zi',
       pricePLN: 49,
       priceUSD: 10,
-      photos: ['http://localhost:3000/product-photos/women-shoes-4.jpg'],
+      photos: ['/product-photos/women-shoes-4.jpg'],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
       maintenanceInfo:
@@ -1016,8 +1016,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-8.jpg',
-        'http://localhost:3000/product-photos/women-shoes-7.jpg',
+        '/product-photos/women-shoes-8.jpg',
+        '/product-photos/women-shoes-7.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1034,9 +1034,9 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-t-shirt-3.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-1.jpg',
-        'http://localhost:3000/product-photos/women-t-shirt-2.jpg',
+        '/product-photos/women-t-shirt-3.jpg',
+        '/product-photos/women-t-shirt-1.jpg',
+        '/product-photos/women-t-shirt-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1053,8 +1053,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-trousers-1.jpg',
-        'http://localhost:3000/product-photos/women-trousers-2.jpg',
+        '/product-photos/women-trousers-1.jpg',
+        '/product-photos/women-trousers-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1071,9 +1071,9 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-shoes-1.jpg',
-        'http://localhost:3000/product-photos/women-shoes-3.jpg',
-        'http://localhost:3000/product-photos/women-shoes-2.jpg',
+        '/product-photos/women-shoes-1.jpg',
+        '/product-photos/women-shoes-3.jpg',
+        '/product-photos/women-shoes-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1090,8 +1090,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/women-sweater-1.jpg',
-        'http://localhost:3000/product-photos/women-sweater-2.jpg',
+        '/product-photos/women-sweater-1.jpg',
+        '/product-photos/women-sweater-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1108,8 +1108,8 @@ async function main() {
       pricePLN: 149,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/women-trousers-4.jpg',
-        'http://localhost:3000/product-photos/women-trousers-3.jpg',
+        '/product-photos/women-trousers-4.jpg',
+        '/product-photos/women-trousers-3.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1126,8 +1126,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-shoes-3.jpg',
-        'http://localhost:3000/product-photos/children-shoes-4.jpg',
+        '/product-photos/children-shoes-3.jpg',
+        '/product-photos/children-shoes-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1144,8 +1144,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/children-shoes-1.jpg',
-        'http://localhost:3000/product-photos/children-shoes-2.jpg',
+        '/product-photos/children-shoes-1.jpg',
+        '/product-photos/children-shoes-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1162,8 +1162,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/children-trousers-1.jpg',
-        'http://localhost:3000/product-photos/children-trousers-2.jpg',
+        '/product-photos/children-trousers-1.jpg',
+        '/product-photos/children-trousers-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1180,8 +1180,8 @@ async function main() {
       pricePLN: 599,
       priceUSD: 119,
       photos: [
-        'http://localhost:3000/product-photos/children-trousers-3.jpg',
-        'http://localhost:3000/product-photos/children-trousers-4.jpg',
+        '/product-photos/children-trousers-3.jpg',
+        '/product-photos/children-trousers-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1198,8 +1198,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-shoes-3.jpg',
-        'http://localhost:3000/product-photos/children-shoes-4.jpg',
+        '/product-photos/children-shoes-3.jpg',
+        '/product-photos/children-shoes-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1216,10 +1216,10 @@ async function main() {
       pricePLN: 199,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/children-shoes-5.jpg',
-        'http://localhost:3000/product-photos/children-shoes-6.jpg',
-        'http://localhost:3000/product-photos/children-shoes-7.jpg',
-        'http://localhost:3000/product-photos/children-shoes-8.jpg',
+        '/product-photos/children-shoes-5.jpg',
+        '/product-photos/children-shoes-6.jpg',
+        '/product-photos/children-shoes-7.jpg',
+        '/product-photos/children-shoes-8.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1236,8 +1236,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/children-trousers-5.jpg',
-        'http://localhost:3000/product-photos/children-trousers-6.jpg',
+        '/product-photos/children-trousers-5.jpg',
+        '/product-photos/children-trousers-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1254,8 +1254,8 @@ async function main() {
       pricePLN: 599,
       priceUSD: 119,
       photos: [
-        'http://localhost:3000/product-photos/children-t-shirt-1.jpg',
-        'http://localhost:3000/product-photos/children-t-shirt-2.jpg',
+        '/product-photos/children-t-shirt-1.jpg',
+        '/product-photos/children-t-shirt-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1272,8 +1272,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-t-shirt-3.jpg',
-        'http://localhost:3000/product-photos/children-t-shirt-4.jpg',
+        '/product-photos/children-t-shirt-3.jpg',
+        '/product-photos/children-t-shirt-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1290,8 +1290,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/children-t-shirt-5.jpg',
-        'http://localhost:3000/product-photos/children-t-shirt-6.jpg',
+        '/product-photos/children-t-shirt-5.jpg',
+        '/product-photos/children-t-shirt-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1308,8 +1308,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/children-t-shirt-7.jpg',
-        'http://localhost:3000/product-photos/children-t-shirt-8.jpg',
+        '/product-photos/children-t-shirt-7.jpg',
+        '/product-photos/children-t-shirt-8.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1326,8 +1326,8 @@ async function main() {
       pricePLN: 599,
       priceUSD: 119,
       photos: [
-        'http://localhost:3000/product-photos/children-t-shirt-6.jpg',
-        'http://localhost:3000/product-photos/children-t-shirt-5.jpg',
+        '/product-photos/children-t-shirt-6.jpg',
+        '/product-photos/children-t-shirt-5.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1344,8 +1344,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-sweater-1.jpg',
-        'http://localhost:3000/product-photos/children-sweater-2.jpg',
+        '/product-photos/children-sweater-1.jpg',
+        '/product-photos/children-sweater-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1362,8 +1362,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/children-sweater-3.jpg',
-        'http://localhost:3000/product-photos/children-sweater-4.jpg',
+        '/product-photos/children-sweater-3.jpg',
+        '/product-photos/children-sweater-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1380,8 +1380,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/children-sweater-5.jpg',
-        'http://localhost:3000/product-photos/children-sweater-6.jpg',
+        '/product-photos/children-sweater-5.jpg',
+        '/product-photos/children-sweater-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1398,8 +1398,8 @@ async function main() {
       pricePLN: 599,
       priceUSD: 119,
       photos: [
-        'http://localhost:3000/product-photos/children-sweater-2.jpg',
-        'http://localhost:3000/product-photos/children-sweater-1.jpg',
+        '/product-photos/children-sweater-2.jpg',
+        '/product-photos/children-sweater-1.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1416,8 +1416,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-bag-1.jpg',
-        'http://localhost:3000/product-photos/children-bag-2.jpg',
+        '/product-photos/children-bag-1.jpg',
+        '/product-photos/children-bag-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1434,8 +1434,8 @@ async function main() {
       pricePLN: 199,
       priceUSD: 39,
       photos: [
-        'http://localhost:3000/product-photos/children-bag-3.jpg',
-        'http://localhost:3000/product-photos/children-bag-4.jpg',
+        '/product-photos/children-bag-3.jpg',
+        '/product-photos/children-bag-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1452,8 +1452,8 @@ async function main() {
       pricePLN: 299,
       priceUSD: 59,
       photos: [
-        'http://localhost:3000/product-photos/children-bag-5.jpg',
-        'http://localhost:3000/product-photos/children-bag-6.jpg',
+        '/product-photos/children-bag-5.jpg',
+        '/product-photos/children-bag-6.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1470,8 +1470,8 @@ async function main() {
       pricePLN: 599,
       priceUSD: 119,
       photos: [
-        'http://localhost:3000/product-photos/children-watch-1.jpg',
-        'http://localhost:3000/product-photos/children-watch-2.jpg',
+        '/product-photos/children-watch-1.jpg',
+        '/product-photos/children-watch-2.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
@@ -1488,8 +1488,8 @@ async function main() {
       pricePLN: 499,
       priceUSD: 99,
       photos: [
-        'http://localhost:3000/product-photos/children-watch-3.jpg',
-        'http://localhost:3000/product-photos/children-watch-4.jpg',
+        '/product-photos/children-watch-3.jpg',
+        '/product-photos/children-watch-4.jpg',
       ],
       description:
         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.',
