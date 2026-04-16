@@ -6,7 +6,7 @@ import { IconMenu } from '../../layout/IconMenu/IconMenu';
 import { TopBar } from '../TopBar/TopBar';
 import { CategoryMenu } from '../../features/products/CategoryMenu/CategoryMenu';
 import { MainContent } from '../../shared/ui/MainContent/MainContent';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigation } from 'react-router-dom';
 import { CurrencyContext } from '../../contexts/CurrencyContext';
 import { useState } from 'react';
 import { CURRENCIES } from '../../constants/currencies';
@@ -14,6 +14,8 @@ import { CartContext } from '../../contexts/CartContext';
 import style from './Layout.module.css';
 
 export function Layout() {
+  const navigation = useNavigation();
+
   const [currency, setCurrency] = useState(
     localStorage['selected_currency'] || CURRENCIES.PLN,
   );
@@ -45,11 +47,19 @@ export function Layout() {
       return newState;
     });
   }
+
   return (
     <CartContext.Provider
       value={[cartItems, addProductCart, removeProductCart]}
     >
       <CurrencyContext.Provider value={[currency, setCurrency]}>
+        {navigation.state === 'loading' && (
+          <div className={style.globalLoader}>
+            <h2>Clothiq</h2>
+            <p>Waking up server... please wait</p>
+          </div>
+        )}
+
         <div className={style.wrapper}>
           <MainContent>
             <TopBar>
