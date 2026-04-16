@@ -1,12 +1,18 @@
 # Clothiq – Fullstack E-commerce Clothing Store
 
-**Live:** https://clothiq-dem.pl
-
 **React · React Router · Node.js · Express · Prisma · MySQL · JWT**
 
 A full-stack e-commerce application where users can browse clothing categories, view product details, manage favourites, and use a client-side shopping cart.
 
 The project focuses on clean component architecture, reusable UI elements, consistent global styling, and a structured backend powered by Prisma ORM and MySQL. Authentication is implemented with JWT, enabling account features such as favourites persistence.
+
+---
+
+## Live Demo
+
+https://clothiq-dem.pl
+
+⚠️ Note: The backend is hosted on Render (free tier), so the first request may take a few seconds due to cold start.
 
 ---
 
@@ -39,7 +45,7 @@ The project focuses on clean component architecture, reusable UI elements, consi
 
 ---
 
-###Authentication (JWT)
+### Authentication (JWT)
 
 - Register & login pages
 - JWT token stored in localStorage
@@ -80,13 +86,26 @@ The project focuses on clean component architecture, reusable UI elements, consi
 
 ## Screenshots
 
-| Home                             | Subcategory                                 | Favorite                              | Bag                         |
-| -------------------------------- | ------------------------------------------- | ------------------------------------- | --------------------------- |
-| ![Home](screenshots/home-v2.png) | ![Subcategory](screenshots/subcategory.png) | ![Favorite](screenshots/favorite.png) | ![Bag](screenshots/bag.png) |
+### Authentication
 
-|     | Login                           | Register                              |     |
-| --- | ------------------------------- | ------------------------------------- | --- |
-|     | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |     |
+<p align="center">
+  <img src="screenshots/login.png" alt="Login screen" width="280" />
+  <img src="screenshots/register.png" alt="Register screen" width="280" />
+</p>
+
+### Dashboard
+
+<p align="center">
+  <img src="screenshots/home.png" alt="Home dashboard" width="560" />
+</p>
+
+### Favorites, Subcategory & Bag
+
+<p align="center">
+  <img src="screenshots/favorite.png" alt="Favorites screen" width="250" />
+  <img src="screenshots/subcategory.png" alt="Subcategory screen" width="250" />
+  <img src="screenshots/bag.png" alt="Bag screen" width="250" />
+</p>
 
 ---
 
@@ -110,6 +129,19 @@ The project focuses on clean component architecture, reusable UI elements, consi
 - bcrypt
 - dotenv
 - CORS
+
+---
+
+## Deployment
+
+- Frontend hosted on Hostinger (static build)
+- Backend API hosted on Render
+- Database hosted on Render (MySQL)
+
+The application uses a split deployment architecture:
+
+- Frontend (Hostinger) communicates with backend API (Render)
+- Images are served statically from the backend
 
 ---
 
