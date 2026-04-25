@@ -37,13 +37,14 @@ img {
 }
 
 body {
-  background: var(--color-white);
+  background: #f7f8fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: var(--font-size-default);
   font-family: var(--font-family-default);
   color: var(--color-text-default);
 }
+
 #root {
   display: flex;
   flex-direction: column;
