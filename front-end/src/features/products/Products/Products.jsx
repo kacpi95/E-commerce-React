@@ -2,15 +2,23 @@ import { CenteredContent } from '../../../shared/ui/CenteredContent/CenteredCont
 import { Product } from '../../../features/products/Product/Product';
 import styles from './Products.module.css';
 
-export function Products({ products = [], headerText }) {
+export function Products({ products = [], headerText, subText }) {
   return (
-    <CenteredContent>
-      <h2 className={styles.bestsellersHeader}>{headerText}</h2>
-      <div className={styles.productsWrapper}>
-        {products.map((product) => {
-          return <Product key={product.id} product={product}></Product>;
-        })}
-      </div>
-    </CenteredContent>
+    <section className={styles.section}>
+      <CenteredContent>
+        <div className={styles.header}>
+          <div>
+            <h2>{headerText}</h2>
+            {subText && <p>{subText}</p>}
+          </div>
+        </div>
+
+        <div className={styles.productsWrapper}>
+          {products.map((product) => {
+            return <Product key={product.id} product={product} />;
+          })}
+        </div>
+      </CenteredContent>
+    </section>
   );
 }
