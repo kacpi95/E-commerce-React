@@ -1,19 +1,20 @@
 .mainMenu {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 18px;
+  justify-content: center;
+  gap: 34px;
   padding: 0;
 }
 
 .mainMenu li a {
   position: relative;
   display: block;
-  padding: 10px 0;
+  padding: 20px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   color: var(--color-text-grey);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .mainMenu li a::after {
@@ -21,27 +22,35 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -6px;
+  bottom: 13px;
   height: 2px;
   transform: scaleX(0);
   transform-origin: left;
-  opacity: 0.9;
-  background: var(--color-text-default);
+  background: var(--color-theme-main);
   transition: transform 0.18s ease;
 }
 
-.mainMenu li a:hover {
-  color: var(--color-text-default);
-}
-
-.mainMenu li a:hover::after {
-  transform: scaleX(1);
-}
-
+.mainMenu li a:hover,
 .mainMenu a:global(.active) {
-  color: var(--color-text-default);
+  color: var(--color-theme-main);
 }
 
+.mainMenu li a:hover::after,
 .mainMenu a:global(.active)::after {
   transform: scaleX(1);
+}
+
+@media (max-width: 900px) {
+  .mainMenu {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .mainMenu li a {
+    padding: 6px 0;
+  }
+
+  .mainMenu li a::after {
+    bottom: -4px;
+  }
 }

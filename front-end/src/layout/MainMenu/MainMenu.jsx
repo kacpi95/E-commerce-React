@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+
 import styles from './MainMenu.module.css';
 import { GENDERS } from '../../constants/category';
 
