@@ -1,4 +1,5 @@
 import { NavLink, useParams } from 'react-router-dom';
+
 import { CATEGORIES } from '../../../constants/category';
 import styles from './CategoryMenu.module.css';
 
