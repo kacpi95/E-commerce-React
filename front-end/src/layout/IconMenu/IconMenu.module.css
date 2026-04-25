@@ -1,54 +1,3 @@
-.iconMenu {
-  display: flex;
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-}
-
-.iconMenu li {
-  position: relative;
-}
-
-.iconLink {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  border-radius: 50px;
-  place-items: center;
-  border: 1px solid rgba(34, 32, 32, 0.08);
-  background: var(--color-grey);
-  transition:
-    transform 0.15s ease,
-    background-color 0.15s ease;
-}
-
-.iconLink:hover {
-  transform: translateY(-1px);
-  background: #ededed;
-}
-
-.iconMenu img {
-  width: 20px;
-  height: 20px;
-}
-
-.numberOfProducts {
-  position: absolute;
-  top: -6px;
-  right: -6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
-  border-radius: 50px;
-  font-size: 11px;
-  font-weight: 700;
-  background-color: var(--color-yellow);
-  border: 2px solid var(--color-white);
-}
-
 .wrapper {
   display: flex;
   align-items: center;
@@ -59,15 +8,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-right: 10px;
-  border-right: 1px solid var(--color-text-default);
 }
 
 .authLink {
+  font-size: 12px;
   font-weight: 700;
   color: var(--color-text-default);
-  text-decoration: none;
-  font-size: 14px;
 }
 
 .authLink:hover {
@@ -76,36 +22,74 @@
 
 .authBtn {
   padding: 8px 10px;
+  border-radius: 9px;
+  font-size: 12px;
   font-weight: 700;
-  font-size: 14px;
-  border-radius: 12px;
-  text-decoration: none;
   color: var(--color-white);
-  background: var(--color-text-default);
-}
-
-.authBtn:hover {
-  opacity: 0.92;
+  background: var(--color-theme-main);
 }
 
 .userEmail {
-  max-width: 160px;
-  font-size: 13px;
+  max-width: 140px;
+  font-size: 12px;
+  color: var(--color-text-grey);
   white-space: nowrap;
   overflow: hidden;
-  color: var(--color-text-grey);
   text-overflow: ellipsis;
 }
 
 .logoutBtn {
   padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
+  background: var(--color-white);
+  font-size: 12px;
   font-weight: 700;
-  font-size: 14px;
-  border-radius: 12px;
-  border: 1px solid var(--color-text-default);
-  background: transparent;
 }
 
-.logoutBtn:hover {
+.iconMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconMenu li {
+  position: relative;
+}
+
+.iconLink {
+  position: relative;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.iconLink:hover {
   background: var(--color-grey);
+}
+
+.iconMenu img {
+  width: 18px;
+  height: 18px;
+}
+
+.numberOfProducts {
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 4px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--color-white);
+  background: #2563eb;
 }

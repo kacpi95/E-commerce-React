@@ -1,3 +1,10 @@
 .currencySelector {
-  padding: 0.5rem;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-text-default);
+  font-size: 12px;
+  font-weight: 600;
 }
