@@ -1,3 +1,6 @@
+import { Outlet, useNavigation } from 'react-router-dom';
+import { useState } from 'react';
+
 import { Footer } from '../Footer/Footer';
 import { MainMenu } from '../MainMenu/MainMenu';
 import { Logo } from '../Logo/Logo';
@@ -6,9 +9,7 @@ import { IconMenu } from '../../layout/IconMenu/IconMenu';
 import { TopBar } from '../TopBar/TopBar';
 import { CategoryMenu } from '../../features/products/CategoryMenu/CategoryMenu';
 import { MainContent } from '../../shared/ui/MainContent/MainContent';
-import { Outlet, useNavigation } from 'react-router-dom';
 import { CurrencyContext } from '../../contexts/CurrencyContext';
-import { useState } from 'react';
 import { CURRENCIES } from '../../constants/currencies';
 import { CartContext } from '../../contexts/CartContext';
 import style from './Layout.module.css';
@@ -56,6 +57,7 @@ export function Layout() {
         {navigation.state === 'loading' && (
           <div className={style.globalLoader}>
             <h2>Clothiq</h2>
+
             <p>Waking up server... please wait</p>
           </div>
         )}
@@ -63,9 +65,9 @@ export function Layout() {
         <div className={style.wrapper}>
           <MainContent>
             <TopBar>
-              <MainMenu />
               <Logo />
-              <div>
+              <MainMenu />
+              <div className={style.headerActions}>
                 <CurrencySelector />
                 <IconMenu />
               </div>
