@@ -1,27 +1,41 @@
+import { useParams, useNavigate } from 'react-router-dom';
+
 import { CenteredContent } from '../../../shared/ui/CenteredContent/CenteredContent';
 import { FullWidthButton } from '../../../shared/ui/FullWidthButton/FullWidthButton';
-import { useParams, useNavigate } from 'react-router-dom';
 import style from './Hero.module.css';
 
 export function Hero({ heroImage }) {
-  const { gender } = useParams;
+  const { gender } = useParams();
   const navigate = useNavigate();
 
   const currentGender = gender || 'kobieta';
+
   return (
-    <div
-      className={style.hero}
-      style={{ backgroundImage: `url(${heroImage})` }}
-    >
-      <CenteredContent>
+    <CenteredContent>
+      <section
+        className={style.hero}
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
         <div className={style.contentWrapper}>
-          <h2>Letnie promocje do -70%</h2>
-          <p>Tylko najlepsze okazje!</p>
-          <FullWidthButton onClick={() => navigate(`/${currentGender}/odziez`)}>
-            Sprawdź produkty
-          </FullWidthButton>
+          <p className={style.eyebrow}>Limitowana kolekcja</p>
+          <h2>Styl dopracowany w każdym detalu.</h2>
+          <p>
+            Odkryj nową kolekcję ubrań i dodatków stworzoną z myślą o codziennym
+            komforcie.
+          </p>
+
+          <div className={style.actions}>
+            <FullWidthButton
+              onClick={() => navigate(`/${currentGender}/odziez`)}
+            >
+              Sprawdź produkty
+            </FullWidthButton>
+            <button className={style.secondaryButton} type='button'>
+              Lookbook
+            </button>
+          </div>
         </div>
-      </CenteredContent>
-    </div>
+      </section>
+    </CenteredContent>
   );
 }
