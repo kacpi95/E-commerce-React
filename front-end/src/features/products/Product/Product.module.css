@@ -101,3 +101,44 @@
   transform: scale(1.15);
   background-image: url('../../../assets/heartRed.svg');
 }
+
+@media (max-width: 520px) {
+  .product {
+    border-radius: 16px;
+  }
+
+  .imageBox {
+    border-radius: 16px;
+  }
+
+  .imageBox img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .productInfo {
+    grid-template-columns: 1fr;
+    padding: 10px 2px 0;
+  }
+
+  .productInfo h3 {
+    font-size: 14px;
+  }
+
+  .category {
+    font-size: 11px;
+  }
+
+  .price {
+    grid-column: 1;
+    grid-row: auto;
+    font-size: 13px;
+  }
+
+  .favouriteButton {
+    top: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+  }
+}

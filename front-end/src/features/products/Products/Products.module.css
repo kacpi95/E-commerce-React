@@ -47,6 +47,28 @@
 
 @media (max-width: 520px) {
   .productsWrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+  }
+
+  .section {
+    padding-bottom: 52px;
+  }
+
+  .header {
+    margin-bottom: 22px;
+  }
+
+  .header h2 {
+    font-size: 28px;
+  }
+
+  .header p {
+    max-width: 280px;
+    font-size: 14px;
+  }
+
+  .viewAll {
+    font-size: 11px;
   }
 }
