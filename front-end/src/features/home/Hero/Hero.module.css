@@ -92,3 +92,31 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 520px;
+    margin-top: 12px;
+    border-radius: 0;
+  }
+
+  .contentWrapper {
+    margin: 0 24px;
+  }
+
+  .contentWrapper h2 {
+    font-size: 38px;
+  }
+
+  .contentWrapper p {
+    font-size: 14px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .secondaryButton {
+    width: 100%;
+  }
+}
