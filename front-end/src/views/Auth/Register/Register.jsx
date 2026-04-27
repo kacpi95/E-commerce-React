@@ -32,9 +32,14 @@ export function Register() {
     }
   }
 
-  return (
-    <div className={styles.wrapper}>
-      <h2 className={styles.title}>Rejestracja</h2>
+return (
+  <main className={styles.authPage}>
+    <section className={styles.card}>
+      <div className={styles.intro}>
+        <p>Dołącz do Clothiq</p>
+        <h2>Rejestracja</h2>
+        <span>Utwórz konto i zapisuj ulubione produkty oraz koszyk.</span>
+      </div>
 
       {error && <div className={styles.error}>{error}</div>}
 
@@ -81,6 +86,7 @@ export function Register() {
       <p className={styles.links}>
         Masz konto? <Link to='/login'>Zaloguj się</Link>
       </p>
-    </div>
-  );
+    </section>
+  </main>
+);
 }
