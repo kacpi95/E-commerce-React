@@ -28,9 +28,14 @@ export function Login() {
     }
   }
 
-  return (
-    <div className={styles.wrapper}>
-      <h2 className={styles.title}>Logowanie</h2>
+return (
+  <main className={styles.authPage}>
+    <section className={styles.card}>
+      <div className={styles.intro}>
+        <p>Witaj ponownie</p>
+        <h2>Logowanie</h2>
+        <span>Zaloguj się, aby przejść do koszyka i ulubionych produktów.</span>
+      </div>
 
       {error && <div className={styles.error}>{error}</div>}
 
@@ -65,6 +70,7 @@ export function Login() {
       <p className={styles.links}>
         Nie masz konta? <Link to='/register'>Zarejestruj się</Link>
       </p>
-    </div>
-  );
+    </section>
+  </main>
+);
 }
