@@ -1,7 +1,9 @@
 import { useContext } from 'react';
-import { useFetcher } from 'react-router-dom';
+import { Link, useFetcher } from 'react-router-dom';
+
 import { Price } from '../../../shared/ui/Price/Price';
 import { CartContext } from '../../../contexts/CartContext';
+import { ENDPOINT_TO_PATH_MAPPING } from '../../../constants/api';
 import BAG_ICON from '../../../assets/bag.svg';
 import REMOVE_IMG from '../../../assets/remove.svg';
 import styles from './FavouriteProduct.module.css';
@@ -11,35 +13,42 @@ export function FavouriteProduct({ favourite }) {
   const { Form } = useFetcher();
   const [, addProductCart] = useContext(CartContext);
 
-  const price = <Price product={product} />;
   const firstPhotoUrl = product?.photos?.[0]?.url;
 
+  const productUrl = `/${ENDPOINT_TO_PATH_MAPPING[product.gender]}/${product.category}/${product.subcategory}/${product.id}`;
+
   return (
-    <div className={styles.favouriteProduct}>
-      <img src={firstPhotoUrl} alt={product.productName} />
+    <article className={styles.favouriteProduct}>
+      <Link to={productUrl} className={styles.imageLink}>
+        <img src={firstPhotoUrl} alt={product.productName} />
+      </Link>
+
       <div className={styles.favouriteProductInfo}>
-        <div className={styles.topRow}>
+        <div>
+          <p className={styles.brand}>{product.brand || 'Clothiq'}</p>
           <h3>
-            {product.brand} {product.productName}
+            <Link to={productUrl}>{product.productName}</Link>
           </h3>
-          <p>{price}</p>
+          <p className={styles.category}>{product.subcategory}</p>
         </div>
-        <p className={styles.priceRow}>
-          <span>Cena: </span>
-          {price}
+
+        <p className={styles.price}>
+          <Price product={product} />
         </p>
+
         <div className={styles.buttonRow}>
           <Form
             action={`/delete-from-favourites/${favourite.id}`}
             method='DELETE'
           >
-            <button type='submit'>
+            <button className={styles.removeButton} type='submit'>
               <img src={REMOVE_IMG} alt='' />
               Usuń
             </button>
           </Form>
 
           <button
+            className={styles.cartButton}
             type='button'
             onClick={() => {
               addProductCart(product);
@@ -50,6 +59,6 @@ export function FavouriteProduct({ favourite }) {
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
