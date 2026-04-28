@@ -1,41 +1,77 @@
 .favouriteProduct {
-  display: flex;
-  gap: 16px;
-  padding: 14px 0;
-  border-top: 1px solid var(--color-border);
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 22px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  background: var(--color-white);
+  transition: transform 0.18s ease;
 }
 
-.favouriteProduct img {
-  width: 96px;
-  aspect-ratio: 3 / 4;
+.favouriteProduct:hover {
+  transform: translateY(-4px);
+}
+
+.imageLink {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.imageLink img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: var(--radius-sm);
-  background: var(--color-grey);
+  transition: transform 0.2s ease;
+}
+
+.favouriteProduct:hover .imageLink img {
+  transform: scale(1.04);
 }
 
 .favouriteProductInfo {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  gap: 10px;
+  min-width: 0;
 }
 
-.topRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 14px;
-  font-weight: 800;
+.brand {
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #2563eb;
+  text-transform: uppercase;
 }
 
-.priceRow span {
+.favouriteProductInfo h3 {
+  margin-bottom: 6px;
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.favouriteProductInfo h3 a:hover {
+  text-decoration: underline;
+}
+
+.category {
   color: var(--color-text-grey);
-  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.price {
+  margin-top: 18px;
+  color: var(--color-theme-main);
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .buttonRow {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   margin-top: auto;
   flex-wrap: wrap;
@@ -44,12 +80,13 @@
 .buttonRow button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  padding: 10px 12px;
+  height: 42px;
+  padding: 0 15px;
   border-radius: 50px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
   transition:
     transform 0.12s ease,
     background-color 0.12s ease;
@@ -57,10 +94,56 @@
 
 .buttonRow button:hover {
   transform: translateY(-1px);
-  background: #fafafa;
 }
 
 .buttonRow button img {
   width: 16px;
   height: 16px;
+}
+
+.removeButton {
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-text-default);
+}
+
+.removeButton:hover {
+  background: var(--color-grey);
+}
+
+.cartButton {
+  border: 1px solid var(--color-theme-main);
+  background: var(--color-theme-main);
+  color: var(--color-white);
+}
+
+@media (max-width: 620px) {
+  .favouriteProduct {
+    grid-template-columns: 110px 1fr;
+    gap: 14px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .imageLink {
+    border-radius: 16px;
+  }
+
+  .favouriteProductInfo h3 {
+    font-size: 16px;
+  }
+
+  .price {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .buttonRow {
+    margin-top: 14px;
+  }
+
+  .buttonRow button {
+    width: 100%;
+    height: 40px;
+  }
 }

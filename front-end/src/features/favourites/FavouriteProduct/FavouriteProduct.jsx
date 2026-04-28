@@ -4,7 +4,6 @@ import { Link, useFetcher } from 'react-router-dom';
 import { Price } from '../../../shared/ui/Price/Price';
 import { CartContext } from '../../../contexts/CartContext';
 import { ENDPOINT_TO_PATH_MAPPING } from '../../../constants/api';
-import BAG_ICON from '../../../assets/bag.svg';
 import REMOVE_IMG from '../../../assets/remove.svg';
 import styles from './FavouriteProduct.module.css';
 
@@ -54,7 +53,6 @@ export function FavouriteProduct({ favourite }) {
               addProductCart(product);
             }}
           >
-            <img src={BAG_ICON} alt='' />
             Dodaj do koszyka
           </button>
         </div>
