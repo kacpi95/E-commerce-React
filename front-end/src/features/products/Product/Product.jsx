@@ -3,10 +3,11 @@ import { Link, useFetcher } from 'react-router-dom';
 import { ENDPOINT_TO_PATH_MAPPING } from '../../../constants/api';
 import { Price } from '../../../shared/ui/Price/Price';
 import styles from './Product.module.css';
+import { getImageUrl } from '../../../utils/getImageUrl';
 
 export function Product({ product }) {
   const { Form } = useFetcher();
-  const firstPhotoUrl = product?.photos?.[0]?.url;
+  const firstPhotoUrl = getImageUrl(product?.photos?.[0]?.url);
 
   return (
     <Link

@@ -3,10 +3,11 @@ import { Price } from '../../../shared/ui/Price/Price';
 import { CartContext } from '../../../contexts/CartContext';
 import REMOVE_IMG from '../../../assets/remove.svg';
 import styles from './CartProduct.module.css';
+import { getImageUrl } from '../../../utils/getImageUrl';
 
 export function CartProduct({ product }) {
   const price = <Price product={product} />;
-  const firstPhotoUrl = product?.photos?.[0]?.url;
+  const firstPhotoUrl = getImageUrl(product?.photos?.[0]?.url);
   const [, , removeProductCart] = useContext(CartContext);
 
   return (

@@ -6,13 +6,14 @@ import { CartContext } from '../../../contexts/CartContext';
 import { ENDPOINT_TO_PATH_MAPPING } from '../../../constants/api';
 import REMOVE_IMG from '../../../assets/remove.svg';
 import styles from './FavouriteProduct.module.css';
+import { getImageUrl } from '../../../utils/getImageUrl';
 
 export function FavouriteProduct({ favourite }) {
   const product = favourite.product;
   const { Form } = useFetcher();
   const [, addProductCart] = useContext(CartContext);
 
-  const firstPhotoUrl = product?.photos?.[0]?.url;
+  const firstPhotoUrl = getImageUrl(product?.photos?.[0]?.url);
 
   const productUrl = `/${ENDPOINT_TO_PATH_MAPPING[product.gender]}/${product.category}/${product.subcategory}/${product.id}`;
 
