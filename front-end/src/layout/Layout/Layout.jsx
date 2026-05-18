@@ -1,4 +1,4 @@
-import { Outlet, useNavigation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
 
 import { Footer } from '../Footer/Footer';
@@ -15,8 +15,6 @@ import { CartContext } from '../../contexts/CartContext';
 import style from './Layout.module.css';
 
 export function Layout() {
-  const navigation = useNavigation();
-
   const [currency, setCurrency] = useState(
     localStorage['selected_currency'] || CURRENCIES.PLN,
   );
@@ -54,14 +52,6 @@ export function Layout() {
       value={[cartItems, addProductCart, removeProductCart]}
     >
       <CurrencyContext.Provider value={[currency, setCurrency]}>
-        {navigation.state === 'loading' && (
-          <div className={style.globalLoader}>
-            <h2>Clothiq</h2>
-
-            <p>Waking up server... please wait</p>
-          </div>
-        )}
-
         <div className={style.wrapper}>
           <MainContent>
             <TopBar>
