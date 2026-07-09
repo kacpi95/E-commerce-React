@@ -68,10 +68,20 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.getElementById('root')).render(
+const root = createRoot(document.getElementById('root'));
+
+root.render(
   <StrictMode>
     <AuthProvider>
       <RouterProvider router={router} />
     </AuthProvider>
   </StrictMode>,
 );
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('app-loader');
+
+  if (loader) {
+    loader.remove();
+  }
+});
