@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Footer } from '../Footer/Footer';
 import { MainMenu } from '../MainMenu/MainMenu';
@@ -15,6 +15,13 @@ import { CartContext } from '../../contexts/CartContext';
 import style from './Layout.module.css';
 
 export function Layout() {
+  useEffect(() => {
+    const loader = document.getElementById('app-loader');
+
+    if (loader) {
+      loader.remove();
+    }
+  }, []);
   const [currency, setCurrency] = useState(
     localStorage['selected_currency'] || CURRENCIES.PLN,
   );

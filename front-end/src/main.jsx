@@ -77,11 +77,3 @@ root.render(
     </AuthProvider>
   </StrictMode>,
 );
-
-window.addEventListener('load', () => {
-  const loader = document.getElementById('app-loader');
-
-  if (loader) {
-    loader.remove();
-  }
-});
